@@ -1,0 +1,74 @@
+body {
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjQ3Zm80dGZiNXBlODg5dHcwZ3JiZnM5NjV1bnV3dGtieWpydGR6biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hqaLQKNjgCAEWf7M7G/giphy.gif");
+    font-family: 'Poppins', sans-serif;
+}
+
+#Cabeçalho {
+    background-color: #ff66b2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#Cabeçalho:hover {
+    transform: scale(1.08);
+
+}
+
+h2 {
+    color: #ff66b2;
+    font-size: 26px;
+    text-shadow: 2px 2px 5px rgba(255, 102, 178, 0.5);
+}
+
+.tema {
+    font-weight: bold;
+}
+
+#Cabeçalho.tema {
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgb(252, 0, 126);
+    border: 2px solid #ff66b2;
+}
+.container:hover{
+    transform: scale(1.1) rotate(-1deg);
+}
+
+#imagem-destaque {
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgb(255, 0, 221);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#imagem-destaque:hover {
+    transform: scale(1.1) rotate(-5deg);
+    box-shadow: 0px 4px 20px rgba(255, 102, 178, 0.8);
+}
+
+.texto {
+    max-width: 500px;
+    padding: 20px;
+    text-align: left;
+}
+
+.intro {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgb(0, 25, 252);
+}
