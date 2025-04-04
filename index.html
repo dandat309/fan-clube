@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steven Universo Fanclube</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Steven Universo Fanclube</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <h1 id="Cabeçalho">Steven Universo Fanclube</h1>
-
-    <div class="container">
-        <img src="MV5BZGJjMmI3ZDMtZTgyNi00MTZhLWE2ZjAtN2Q4YTUyMTg4OGY1XkEyXkFqcGc@.webp" 
-             alt="Imagem de Steven Universo" 
-             id="imagem-destaque">
-        <div class="texto">
-            <h2 class="tema">Um espaço para os fãs de Steven Universo!</h2>
-            <p class="intro">
-                ✨ Seja bem-vindo ao maior fanclube de Steven Universo! 💎🌈 Aqui, fãs se reúnem para celebrar essa incrível série, compartilhar teorias, relembrar momentos marcantes e espalhar o amor e a positividade que fazem parte do universo de Steven e das Crystal Gems. Junte-se a nós nessa aventura intergaláctica! 🚀💖
-            </p>
-        </div>
+  <!-- Cabeçalho -->
+  <h1 id="Cabeçalho">Steven Universo Fanclube</h1>
+  <!-- Música e controles de áudio -->
+  <div class="audio-controls">
+    <audio id="myAudio">
+      <source src="Love Like You.mp3" type="audio/mpeg" />
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <button onclick="playAudio()">▶ Play</button>
+    <button onclick="pauseAudio()">⏸ Pause</button>
+    <label for="volumeControl">🔊 Volume: </label>
+    <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" oninput="changeVolume(this.value)" />
+  </div>
+  <!-- Container com imagem e texto -->
+  <div class="container">
+    <img
+      src="MV5BZGJjMmI3ZDMtZTgyNi00MTZhLWE2ZjAtN2Q4YTUyMTg4OGY1XkEyXkFqcGc@.webp"alt="Imagem de Steven Universo"id="imagem-destaque"/>
+    <div class="texto">
+      <h2 class="tema">Um espaço para os fãs de Steven Universo!</h2>
+      <p class="intro">
+        ✨ Seja bem-vindo ao maior fanclube de Steven Universo! 💎🌈 Aqui, fãs se reúnem para celebrar essa incrível série, compartilhar teorias, relembrar momentos marcantes e espalhar o amor e a positividade que fazem parte do universo de Steven e das Crystal Gems. Junte-se a nós nessa aventura intergaláctica! 🚀💖
+      </p>
     </div>
-
+  </div>
+  <!-- Botão de avançar -->
+  <div class="button-container">
+    <a href="indexII.html" class="button">Avançar ➡️</a>
+  </div>
+  <!-- controle do áudio -->
+  <script>
+    const audio = document.getElementById("myAudio");
+    function playAudio() {
+      audio.play();
+    }
+    function pauseAudio() {
+      audio.pause();
+    }
+    function changeVolume(value) {
+      audio.volume = value;
+    }
+  </script>
 </body>
 </html>
