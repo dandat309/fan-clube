@@ -7,9 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Cabeçalho -->
   <h1 id="Cabeçalho">Steven Universo Fanclube</h1>
-  <!-- Música e controles de áudio -->
   <div class="audio-controls">
     <audio id="myAudio">
       <source src="Love Like You.mp3" type="audio/mpeg" />
@@ -20,7 +18,6 @@
     <label for="volumeControl">🔊 Volume: </label>
     <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" oninput="changeVolume(this.value)" />
   </div>
-  <!-- Container com imagem e texto -->
   <div class="container">
     <img
       src="MV5BZGJjMmI3ZDMtZTgyNi00MTZhLWE2ZjAtN2Q4YTUyMTg4OGY1XkEyXkFqcGc@.webp"alt="Imagem de Steven Universo"id="imagem-destaque"/>
@@ -31,11 +28,9 @@
       </p>
     </div>
   </div>
-  <!-- Botão de avançar -->
   <div class="button-container">
     <a href="indexII.html" class="button">Avançar ➡️</a>
   </div>
-  <!-- controle do áudio -->
   <script>
     const audio = document.getElementById("myAudio");
     function playAudio() {
