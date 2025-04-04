@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista das Crystal Gems</title>
+  <link rel="stylesheet" href="styleII.css">
+</head>
+<body>
+  <div class="audio-controls">
+    <audio id="myAudio">
+      <source src="We Are the Crystal Gems.mp3" type="audio/mpeg" />
+    </audio>
+    <button onclick="playAudio()">▶ Play</button>
+    <button onclick="pauseAudio()">⏸ Pause</button>
+    <label for="volumeControl">🔊 Volume: </label>
+    <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" oninput="changeVolume(this.value)" />
+  </div>
+  <div class="container">
+    <h1 class="titulo">Integrantes principais das Crystal Gems 💎</h1>
+    <ul class="lista-gems">
+      <li class="gem-item">Garnet🔮</li>
+      <li class="gem-item">Amethyst💜</li>
+      <li class="gem-item">Pearl🕊️</li>
+      <li class="gem-item">Steven🌟</li>
+      <li class="gem-item">Connie⚔️</li>
+    </ul>
+    <a href="indexIII.html" class="botao-ir">🌈 Ir para a Página 3</a>
+  </div>
+    <script>
+        const audio = document.getElementById("myAudio");
+        function playAudio() {
+          audio.play();
+        }
+        function pauseAudio() {
+          audio.pause();
+        }
+        function changeVolume(value) {
+          audio.volume = value;
+        }
+      </script>
+</body>
+</html>
